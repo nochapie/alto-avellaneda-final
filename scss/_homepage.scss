@@ -1,0 +1,107 @@
+@import "colores";
+@import "media-screen";
+
+
+/* fondo del shopping */
+
+.alto_imagen{
+    background-color: $azul;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 10px $negro;
+    margin: 5rem 8rem;
+
+    @include media_custom_tablet (768px , 1300px) {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+
+    @include mobile {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+
+    img {
+        border-radius: 2rem;
+        padding: 5rem;
+        width: 100%;
+        height: 88vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        @include media_custom_tablet (768px , 1300px) {
+            padding: 3rem;
+        }
+
+        @include mobile {
+            padding: 3rem;
+        }
+    }
+}
+
+
+/* Titulo de Inicio y Servicios */
+
+.novedades{
+    width: 100%;
+    text-align: center;
+    margin: 8rem 0rem;
+    background-color: $azul;
+    color: $blanco;
+}
+
+
+/* imagenes destacadas */
+
+.contenedor_imagenes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem;
+    margin: 8rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 10px black;
+    background-color: $azul;
+
+    @include mobile {
+        flex-direction: column;
+        padding: 3rem;
+        margin: 5rem;
+    }
+
+
+    .imagen{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        span{
+            text-align: center;
+            margin-bottom: 8rem;
+            margin-top: 2rem;
+            color: $blanco;
+        }
+        img{
+            height: 400px;
+            margin: 0 auto;
+            width: 95%;
+            border-radius: 2rem;
+            border: 2px solid $blanco;
+            box-shadow: 10px 10px 10px $negro;
+
+            @include mobile {
+                height: 300px;
+                width:  100%;
+            }
+        }
+
+    }
+}

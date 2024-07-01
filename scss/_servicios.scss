@@ -1,0 +1,103 @@
+@import "colores";
+@import "media-screen";
+
+
+/* contenedor servicios */
+
+.contenedor_servicios{
+    box-shadow: 5px 4px 10px $azul;
+    background-color: rgba(250, 235, 215, 0.6);
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 5rem;
+    margin: 8rem;
+    h1{
+        text-align: center;
+    }
+    h3{
+        margin: 2rem;
+        
+    }
+    i:hover{
+        cursor: pointer;
+        transform: scale(1.5);
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+
+/* servicios grandes  */
+
+.servicios{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin-bottom: 1rem;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+
+
+    span{
+        font-size: 6rem;
+
+        @include tablet {
+            font-size: 5rem;
+            border-bottom: 2px solid $negro;
+        }
+
+        @include mobile {
+            font-size: 5rem;
+            border-bottom: 2px solid black;
+        }
+    }
+}
+
+
+/* servicios_secundarios */
+
+.servicios_secundarios{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-bottom: 1rem;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+
+
+    span {
+        font-size: 4rem;
+        @include tablet {
+            font-size: 5rem;
+            border-bottom: 2px solid $negro;
+        }
+
+        @include mobile {
+            font-size: 4rem;
+            border-bottom: 2px solid $negro;
+        }
+    }
+}

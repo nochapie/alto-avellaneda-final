@@ -1,0 +1,36 @@
+
+/* TABLET */
+
+@mixin tablet {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+
+@mixin media_custom_tablet ( $ancho1 , $ancho2){
+    @media screen and (min-width: #{$ancho1}) and (max-width: #{$ancho2}) {
+        @content;
+    }
+}
+
+
+
+
+
+/* MOBILE */
+
+@mixin mobile {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+
+@mixin media_custom_mobile ( $ancho1 , $ancho2 ){
+    @media screen and (min-width: #{$ancho1}) and (max-width: #{$ancho2}) {
+        @content;
+    }
+}
+
+
